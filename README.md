@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Virgil Health Tracker 🐱
+
+A comprehensive health management dashboard for monitoring Virgil, my British Shorthair cat with a congenital heart condition (Cor Triatriatum Sinister).
+
+## About
+
+Virgil requires daily medication and regular health monitoring, particularly respiratory rate tracking. This application helps manage medications, track respiratory rates, log symptoms, and maintain veterinary visit records.
+
+## Tech Stack
+
+- **Frontend**: Next.js 14 (App Router), TypeScript, Tailwind CSS
+- **State Management**: TanStack Query (React Query), Zustand
+- **Data Storage**: LocalStorage (Phase 1) → Supabase (Phase 2) → AWS (Phase 3)
+- **UI Components**: Custom components with Tailwind, Lucide React icons
+- **Date Handling**: date-fns
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20+
+- npm or yarn
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+virgil-health-tracker/
+├── app/                    # Next.js app router pages
+├── components/             # React components
+│   ├── ui/                # Reusable UI components
+│   ├── layout/            # Layout components
+│   ├── dashboard/         # Dashboard-specific components
+│   ├── medications/       # Medication management
+│   └── respiratory/       # Respiratory rate tracking
+├── lib/                   # Utility functions
+│   ├── storage.ts         # LocalStorage wrapper
+│   ├── utils.ts           # Helper functions
+│   └── constants.ts       # App constants
+├── types/                 # TypeScript type definitions
+├── data/                  # Mock data (Phase 1)
+└── public/                # Static assets
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Core Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Phase 1 (Current - MVP)
+- ✅ Project setup and initial structure
+- ⏳ Medication management and scheduling
+- ⏳ Respiratory rate measurement (tap counter with 30s timer)
+- ⏳ Daily medication logs
+- ⏳ Dashboard with today's overview
 
-## Deploy on Vercel
+### Phase 2 (Cloud Deployment)
+- Supabase integration (PostgreSQL, Auth, Storage)
+- Photo upload for medication and symptom logs
+- PWA with push notifications
+- Vercel deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Phase 3 (Production Infrastructure)
+- FastAPI backend
+- Docker containerization
+- AWS deployment (ECS, RDS, S3)
+- CI/CD with GitHub Actions
+- Monitoring and observability
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development
+
+This project follows incremental development practices with a focus on:
+- Clean, documented code for portfolio purposes
+- Mobile-first responsive design
+- TypeScript strict mode
+- Conventional commit messages
+
+See [VIRGIL_HEALTH_TRACKER_CONTEXT.md](./VIRGIL_HEALTH_TRACKER_CONTEXT.md) for detailed development context and guidelines.
+
+## License
+
+Private project for personal use.
+
+## Contact
+
+Developer: Soyoung Jung
+- Location: Paris, France
+- Current: Intern at Assurly
