@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "med-001",
+    "name": "Furosemide(Libeo)",
+    "dosage": "5mg",
+    "frequency": "twice daily",
+    "times": ["09:00", "21:00"],
+    "startDate": "2025-11-27T00:00:00.000Z",
+    "notes": "Les fractions de comprimés doivent être conservées dans la plaquette et être utilisées dans les 72H.",
+    "active": true
+  },
+  {
+    "id": "med-002",
+    "name": "Rivaroxaban(Zentiva)",
+    "dosage": "2.5mg",
+    "frequency": "once daily",
+    "times": ["21:00"],
+    "startDate": "2025-11-27T00:00:00.000Z",
+    "notes": "Can be given with food",
+    "active": true
+  },
+  {
+    "id": "med-003",
+    "name": "Spironolactone(Prilactone Next)",
+    "dosage": "5mg",
+    "frequency": "once daily",
+    "times": ["09:00"],
+    "startDate": "2025-11-27T00:00:00.000Z",
+    "notes": "Les fractions de comprimés doivent être conservées dans la plaquette thermoformée et utilisées dans les 24H.",
+    "active": true
+  }
+]

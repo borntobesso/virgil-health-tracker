@@ -1,1 +1,51 @@
-[]
+[
+  {
+    "id": "log-001",
+    "medicationId": "med-001",
+    "scheduledTime": "2026-01-27T09:00:00.000Z",
+    "actualTime": "2026-01-27T09:05:00.000Z",
+    "completed": true,
+    "skipped": false
+  },
+  {
+    "id": "log-002",
+    "medicationId": "med-003",
+    "scheduledTime": "2026-01-27T09:00:00.000Z",
+    "actualTime": "2026-01-27T09:05:00.000Z",
+    "completed": true,
+    "skipped": false
+  },
+  {
+    "id": "log-003",
+    "medicationId": "med-001",
+    "scheduledTime": "2026-01-26T21:00:00.000Z",
+    "actualTime": "2026-01-26T21:10:00.000Z",
+    "completed": true,
+    "skipped": false
+  },
+  {
+    "id": "log-004",
+    "medicationId": "med-002",
+    "scheduledTime": "2026-01-26T21:00:00.000Z",
+    "actualTime": "2026-01-26T21:10:00.000Z",
+    "completed": true,
+    "skipped": false
+  },
+  {
+    "id": "log-005",
+    "medicationId": "med-001",
+    "scheduledTime": "2026-01-26T09:00:00.000Z",
+    "actualTime": "2026-01-26T09:15:00.000Z",
+    "completed": true,
+    "skipped": false,
+    "note": "Gave with a treat"
+  },
+  {
+    "id": "log-006",
+    "medicationId": "med-003",
+    "scheduledTime": "2026-01-26T09:00:00.000Z",
+    "actualTime": "2026-01-26T09:15:00.000Z",
+    "completed": true,
+    "skipped": false
+  }
+]
